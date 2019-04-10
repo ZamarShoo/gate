@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="left--col">
+        <img class="gate--own " src="./img/gate_own.png" alt="">
+        <div class="parametres">
+            <p class="choose--type">Выберите тип:</p>
+            <div class="check--type">                    
+                    <label id="block-1" class="check--element">
+                        <input name="type-selected" value="small" type="radio" onclick="chooseType()">
+                        <img src="./img/white-small.png" alt="">
+                    </label>                    
+                    <label id="block-2" class="check--element">
+                        <input name="type-selected" value="big" type="radio" onclick="chooseType()">
+                        <img src="./img/white-big.png" alt="">
+                    </label>
+            </div>
+            <p class="choose--type">Выберите цвет:</p> 
+            <div class="check--color">
+                   <div class="color-top">
+                        
+                        <label class="check--white check--element">
+                            <input name="color" value="white" type="radio" checked>
+                            <img src="../img/white.jpg" alt="">
+                        </label>
+                        <label class="check--light-grey check--element">
+                            <input name="color" value="light-gray" type="radio">
+                            <img src="../img/light-gray.jpg" alt="">
+                        </label>
+                        <label class="check--grey check--element">
+                            <input name="color" value="gray" type="radio">
+                            <img src="../img/gray.jpg" alt="">
+                        </label>
+                        <label class="check--dark-gray check--element">
+                            <input name="color" value="dark-gray" type="radio">
+                            <img src="../img/dark-gray.jpg" alt="">
+                        </label>
+                        <label class="check--dark-green check--element">
+                            <input name="color" value="dark-green" type="radio">
+                            <img src="../img/dark-green.jpg" alt="">
+                        </label>
+                   </div>
+                    <div class="color-bottom">                        
+                        <label class="check--light-brown check--element">
+                            <input name="color" value="light-brown" type="radio">
+                            <img src="../img/light-brown.jpg" alt="">
+                        </label>                        
+                        <label class="check--light-tree check--element">
+                            <input name="color" value="light-tree" type="radio">
+                            <img src="../img/light-tree.jpg" alt="">
+                        </label>                       
+                        <label class="check--tree check--element">
+                            <input name="color" value="tree" type="radio">
+                            <img src="../img/tree.jpg" alt="">
+                        </label>                       
+                        <label class="check--brown check--element">
+                            <input name="color" value="brown" type="radio">
+                            <img src="../img/brown.jpg" alt="">
+                        </label>
+                    </div>
+            </div>       
+        </div>
+    </div>
+    <div class="right--col">
+            <table class="gate__first hidden">
+                    <thead>
+                        <tr>
+                            <td class="first--col">Размер ворот по<br>акции</td>
+                            <td class="second--col">Вкл. гарнитур ручек</td>
+                            <td class="third--col">Вкл. Prolift</td>
+                            <td class="fourth--col">Вкл.<br>ProMatic</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2500 × 2125 мм</td>
+                            <td>41 000 р</td>
+                            <td>48 500 р</td>
+                            <td>52 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2500 × 2250 мм</td>
+                            <td>41 500 р</td>
+                            <td>49 500 р</td>
+                            <td>53 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>2500 × 2500 мм</td>
+                            <td>42 500 р</td>
+                            <td>52 000 р</td>
+                            <td>55 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2125 мм</td>
+                            <td>47 000 р</td>
+                            <td>55 000 р</td>
+                            <td>58 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2250 мм</td>
+                            <td>47 500 р</td>
+                            <td>55 500 р</td>
+                            <td>59 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2500 мм</td>
+                            <td>50 500 р</td>
+                            <td>59 500 р</td>
+                            <td>63 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2125 мм</td>
+                            <td>50 000 р</td>
+                            <td>58 000 р</td>
+                            <td>61 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2250 мм</td>
+                            <td>50 500 р</td>
+                            <td>58 500 р</td>
+                            <td>62 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2500 мм</td>
+                            <td>53 500 р</td>
+                            <td>62 500 р</td>
+                            <td>66 500 р</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                 <table class="gate__second ">
+                    <thead>
+                        <tr>
+                            <td class="first--col">Размер ворот по<br>акции</td>
+                            <td class="second--col">Вкл. гарнитур ручек</td>
+                            <td class="third--col">Вкл. Prolift</td>
+                            <td class="fourth--col">Вкл.<br>ProMatic</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2500 × 2125 мм</td>
+                            <td>48 500 р</td>
+                            <td>56 500 р</td>
+                            <td>60 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>2500 × 2250 мм</td>
+                            <td>49 000 р</td>
+                            <td>57 000 р</td>
+                            <td>60 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2500 × 2500 мм</td>
+                            <td>51 500 р</td>
+                            <td>61 000 р</td>
+                            <td>564 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2125 мм</td>
+                            <td>53 000 р</td>
+                            <td>60 500 р</td>
+                            <td>64 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2250 мм</td>
+                            <td>53 500 р</td>
+                            <td>61 500 р</td>
+                            <td>65 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>2750 × 2500 мм</td>
+                            <td>56 500 р</td>
+                            <td>66 000 р</td>
+                            <td>69 500 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2125 мм</td>
+                            <td>56 500 р</td>
+                            <td>64 500 р</td>
+                            <td>68 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2250 мм</td>
+                            <td>57 500 р</td>
+                            <td>65 500 р</td>
+                            <td>69 000 р</td>
+                        </tr>
+                        <tr>
+                            <td>3000 × 2500 мм</td>
+                            <td>60 500 р</td>
+                            <td>70 000 р</td>
+                            <td>73 500 р</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <span>* Поставляется в приводом SupraMatic E 3</span>
+    </div>
+</div>
+
+
+
+<script src="./js/goal-script.js"></script>
+</body>
+</html>
