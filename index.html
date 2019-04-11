@@ -10,58 +10,61 @@
 <body>
 <div class="wrapper">
     <div class="left--col">
-        <img class="gate--own " src="./img/gate_own.png" alt="">
+            <div class="gate--wrapper">
+                <img class="gate--own" src="./img/gate_own.png" alt="">
+                <img id="gate_own" src="./img/white-small.png" alt="">
+            </div>
         <div class="parametres">
             <p class="choose--type">Выберите тип:</p>
-            <div class="check--type">                    
-                    <label id="block-1" class="check--element">
-                        <input name="type-selected" value="small" type="radio" onclick="chooseType()">
-                        <img src="./img/white-small.png" alt="">
+            <div class="check--type">         
+                    <label class="check--element">
+                        <input name="type-selected" value="small" type="radio" onclick="chooseType(0)">
+                        <img id="block-1" src="./img/white-small.png" alt="">
                     </label>                    
-                    <label id="block-2" class="check--element">
-                        <input name="type-selected" value="big" type="radio" onclick="chooseType()">
-                        <img src="./img/white-big.png" alt="">
+                    <label class="check--element">
+                        <input name="type-selected" value="big" type="radio" onclick="chooseType(1)">
+                        <img id="block-2" src="./img/white-big.png" alt="">                      
                     </label>
             </div>
             <p class="choose--type">Выберите цвет:</p> 
             <div class="check--color">
                    <div class="color-top">
                         <label class="check--white check--element">
-                            <input name="color" value="white" type="radio" checked>
+                            <input onclick="changeColor('white')" name="color" value="white" type="radio">
                             <img src="../img/white.jpg" alt="">
                         </label>
                         <label class="check--light-grey check--element">
-                            <input name="color" value="light-gray" type="radio">
+                            <input onclick="changeColor('light-gray')" name="color" value="light-gray" type="radio">
                             <img src="../img/light-gray.jpg" alt="">
                         </label>
                         <label class="check--grey check--element">
-                            <input name="color" value="gray" type="radio">
+                            <input onclick="changeColor('gray')" name="color" value="gray" type="radio">
                             <img src="../img/gray.jpg" alt="">
                         </label>
                         <label class="check--dark-gray check--element">
-                            <input name="color" value="dark-gray" type="radio">
+                            <input onclick="changeColor('dark-gray')" name="color" value="dark-gray" type="radio">
                             <img src="../img/dark-gray.jpg" alt="">
                         </label>
                         <label class="check--dark-green check--element">
-                            <input name="color" value="dark-green" type="radio">
+                            <input onclick="changeColor('dark-green')" name="color" value="dark-green" type="radio">
                             <img src="../img/dark-green.jpg" alt="">
                         </label>
                    </div>
                     <div class="color-bottom">                        
                         <label class="check--light-brown check--element">
-                            <input name="color" value="light-brown" type="radio">
+                            <input onclick="changeColor('light-brown')" name="color" value="light-brown" type="radio">
                             <img src="../img/light-brown.jpg" alt="">
                         </label>                        
                         <label class="check--light-tree check--element">
-                            <input name="color" value="light-tree" type="radio">
+                            <input onclick="changeColor('light-tree')" name="color" value="light-tree" type="radio">
                             <img src="../img/light-tree.jpg" alt="">
                         </label>                       
                         <label class="check--tree check--element">
-                            <input name="color" value="tree" type="radio">
+                            <input onclick="changeColor('tree')" name="color" value="tree" type="radio">
                             <img src="../img/tree.jpg" alt="">
                         </label>                       
                         <label class="check--brown check--element">
-                            <input name="color" value="brown" type="radio">
+                            <input onclick="changeColor('brown')" name="color" value="brown" type="radio">
                             <img src="../img/brown.jpg" alt="">
                         </label>
                     </div>
@@ -69,7 +72,7 @@
         </div>
     </div>
     <div class="right--col">
-            <table class="gate__first hidden">
+            <table class="gate__second hidden">
                     <thead>
                         <tr>
                             <td class="first--col">Размер ворот по<br>акции</td>
@@ -136,7 +139,7 @@
                         
                     </tbody>
                 </table>
-                 <table class="gate__second ">
+                 <table class="gate__first ">
                     <thead>
                         <tr>
                             <td class="first--col">Размер ворот по<br>акции</td>
